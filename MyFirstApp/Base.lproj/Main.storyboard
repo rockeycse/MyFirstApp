@@ -1,14 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFirstApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +22,74 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="E84-DJ-FaG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CxF-Eq-WG8">
+                                <rect key="frame" x="10" y="20" width="355" height="40"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2zY-7z-Gz3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQL-MH-keU">
+                                <rect key="frame" x="94" y="300" width="187.5" height="67"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="MyButton"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="myButtonActiion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uh9-uJ-JDY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to auto-layout " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwc-uR-ITC">
+                                <rect key="frame" x="36" y="631" width="273" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yQL-MH-keU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0BU-zK-EH2"/>
+                            <constraint firstItem="Wwc-uR-ITC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="0dW-3u-2hT"/>
+                            <constraint firstItem="yQL-MH-keU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Boe-lR-Se3"/>
+                            <constraint firstItem="yQL-MH-keU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="D6T-86-Ayd"/>
+                            <constraint firstItem="yQL-MH-keU" firstAttribute="height" secondItem="E84-DJ-FaG" secondAttribute="height" multiplier="0.1" id="DKb-ao-jl9"/>
+                            <constraint firstItem="E84-DJ-FaG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="G8S-xb-jDB"/>
+                            <constraint firstAttribute="trailing" secondItem="CxF-Eq-WG8" secondAttribute="trailing" constant="10" id="JRj-xl-HMM"/>
+                            <constraint firstItem="CxF-Eq-WG8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="LjP-2s-3HC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wwc-uR-ITC" secondAttribute="trailing" constant="50" id="Myq-Lz-yOo"/>
+                            <constraint firstItem="yQL-MH-keU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PcA-d9-OYP"/>
+                            <constraint firstItem="CxF-Eq-WG8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="SaF-dd-aVb"/>
+                            <constraint firstItem="E84-DJ-FaG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VL7-xJ-b09"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E84-DJ-FaG" secondAttribute="bottom" id="iag-76-mS8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wwc-uR-ITC" secondAttribute="bottom" constant="20" id="v55-A7-gwo"/>
+                            <constraint firstItem="yQL-MH-keU" firstAttribute="width" secondItem="E84-DJ-FaG" secondAttribute="width" multiplier="0.5" id="vBg-UQ-Eb4"/>
+                            <constraint firstAttribute="trailing" secondItem="E84-DJ-FaG" secondAttribute="trailing" id="wVh-iU-I2f"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnOutlet" destination="yQL-MH-keU" id="WDE-aY-ppy"/>
+                        <outlet property="topLabel" destination="CxF-Eq-WG8" id="gcQ-je-GG2"/>
+                        <outlet property="wlcomeLabel" destination="Wwc-uR-ITC" id="SzD-e8-MKw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="-26.53673163418291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image.jpeg" width="164" height="307"/>
+    </resources>
 </document>

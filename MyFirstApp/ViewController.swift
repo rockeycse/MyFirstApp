@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var btnOutlet: UIButton!
+    @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var wlcomeLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +23,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func myButtonActiion(_ sender: Any) {
+        topLabel.text = "HI Mr. Samiul"
+        wlcomeLabel.text = "This is Bangladesh"
+    }
 
 }
 

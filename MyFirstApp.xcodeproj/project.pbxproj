@@ -14,6 +14,7 @@
 		9975A7681F7560680044FAA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9975A7661F7560680044FAA5 /* LaunchScreen.storyboard */; };
 		9975A7731F7560680044FAA5 /* MyFirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975A7721F7560680044FAA5 /* MyFirstAppTests.swift */; };
 		9975A77E1F7560680044FAA5 /* MyFirstAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975A77D1F7560680044FAA5 /* MyFirstAppUITests.swift */; };
+		99F9C9A41F76C43900DE7C3B /* image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 99F9C9A31F76C43900DE7C3B /* image.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9975A7791F7560680044FAA5 /* MyFirstAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9975A77D1F7560680044FAA5 /* MyFirstAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstAppUITests.swift; sourceTree = "<group>"; };
 		9975A77F1F7560680044FAA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99F9C9A31F76C43900DE7C3B /* image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		9975A75C1F7560680044FAA5 /* MyFirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				99F9C9A01F76C1D500DE7C3B /* image */,
 				9975A75D1F7560680044FAA5 /* AppDelegate.swift */,
 				9975A75F1F7560680044FAA5 /* ViewController.swift */,
 				9975A7611F7560680044FAA5 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				9975A77F1F7560680044FAA5 /* Info.plist */,
 			);
 			path = MyFirstAppUITests;
+			sourceTree = "<group>";
+		};
+		99F9C9A01F76C1D500DE7C3B /* image */ = {
+			isa = PBXGroup;
+			children = (
+				99F9C9A31F76C43900DE7C3B /* image.jpeg */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9975A7681F7560680044FAA5 /* LaunchScreen.storyboard in Resources */,
+				99F9C9A41F76C43900DE7C3B /* image.jpeg in Resources */,
 				9975A7651F7560680044FAA5 /* Assets.xcassets in Resources */,
 				9975A7631F7560680044FAA5 /* Main.storyboard in Resources */,
 			);
@@ -507,6 +519,7 @@
 				9975A7841F7560680044FAA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9975A7851F7560680044FAA5 /* Build configuration list for PBXNativeTarget "MyFirstAppTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +528,7 @@
 				9975A7871F7560680044FAA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9975A7881F7560680044FAA5 /* Build configuration list for PBXNativeTarget "MyFirstAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +537,7 @@
 				9975A78A1F7560680044FAA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
